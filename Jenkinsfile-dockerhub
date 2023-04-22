@@ -11,7 +11,7 @@ pipeline {
     stages { 
         stage('SCM Checkout') {
             steps{
-           git branch: 'main', url: 'https://github.com/cedricoracle/Amazon-clone-Dockerized/edit/main/Jenkinsfile-dockerhub'
+           git branch: 'main', url: 'https://github.com/cedricoracle/Amazon-clone-Dockerized.git'
             }
         }
 
