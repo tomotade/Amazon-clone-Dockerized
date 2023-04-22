@@ -6,12 +6,12 @@ pipeline {
      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('cedric-dockerhub')
-    APP_NAME = "ooghenekaro/amazon"
+    APP_NAME = "cedric96/amazon"
     }
     stages { 
         stage('SCM Checkout') {
             steps{
-           git branch: 'main', url: 'https://github.com/ooghenekaro/Amazon-clone-Dockerized.git'
+           git branch: 'main', url: 'https://github.com/cedricoracle/Amazon-clone-Dockerized/edit/main/Jenkinsfile-dockerhub'
             }
         }
 
