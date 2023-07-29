@@ -5,13 +5,13 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('cedric-dockerhub')
-    APP_NAME = "cedric96/amazon"
+    DOCKERHUB_CREDENTIALS = credentials('tomotade-dockerhub')
+    APP_NAME = "tomotade/amazon"
     }
     stages { 
         stage('SCM Checkout') {
             steps{
-           git branch: 'main', url: 'https://github.com/cedricoracle/Amazon-clone-Dockerized.git'
+           git branch: 'main', url: 'https://github.com/tomotade/Amazon-clone-Dockerized.git'
             }
         }
 
